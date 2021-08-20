@@ -1,7 +1,20 @@
 #Compute accuracy, f1 score, at TOP1 and TOP5 
 import numpy as np
+from transformers import RobertaTokenizer
 
-def get_acc_and_f1_values(encoded_pred,encoded_tgt):
+tokenizer = RobertaTokenizer.from_pretrained("huggingface/CodeBERTa-small-v1")
+
+def tokenize_and_remove_underscores(sequence):
+    underscore_token = tokenizer.get_vocab()["_"]
+    encoded_with_underscore = tokenizer.encode_plus(sequence,add_special_tokens=False)["input_ids"]
+    encoded = [token for token in encoded_with_underscore if token != underscore_token]
+    return encoded
+
+
+
+def get_acc_and_f1_values(prediction,label):
+    encoded_pred = tokenize_and_remove_underscores(prediction)
+    encoded_tgt = tokenize_and_remove_underscores(label)
     #metrics to compute
     precision = 0
     recall = 0

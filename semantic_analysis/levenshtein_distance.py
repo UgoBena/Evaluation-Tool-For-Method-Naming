@@ -55,7 +55,6 @@ def levenshtein_rec(list_a,list_b,insertion_weight=.5,deletion_weight=.5,synonym
     #case replacement, first check if the words are synonyms
     if action == 2:
         if list_a[0] in get_synonyms(list_b[0]):
-            print("found synonyms !")
             return synonyms_weight + results[action]
         else:
             return 1 + results[action]
