@@ -1,0 +1,64 @@
+[['create_fields', 'parse_fields', 'parse', 'get_fields', 'yield_fields']]
+[1m####################
+Evaluation Start
+####################[0m
+[4mEvaluation n°1[0m
+Label : create_fields
+____________________
+[4mPrediction n°1[0m
+Predicted method name : create_fields
+Exact Match: True
+F1 score: 1.0
+Precision: 1.0
+Recall: 1.0
+Perplexity: 8.250254949595204
+Semantic Distance: 0.0
+____________________
+____________________
+[4mPrediction n°2[0m
+Predicted method name : parse_fields
+Exact Match: False
+F1 score: 0.5
+Precision: 0.5
+Recall: 0.5
+Perplexity: 25.525746658109725
+Semantic Distance: 0.42430245876312256
+____________________
+____________________
+[4mPrediction n°3[0m
+Predicted method name : parse
+Exact Match: False
+F1 score: 0.0
+Precision: 0.0
+Recall: 0.0
+Perplexity: 31.483156647306743
+Semantic Distance: 0.8486049175262451
+____________________
+____________________
+[4mPrediction n°4[0m
+Predicted method name : get_fields
+Exact Match: False
+F1 score: 0.5
+Precision: 0.5
+Recall: 0.5
+Perplexity: 26.66061732663057
+Semantic Distance: 0.42225340008735657
+____________________
+____________________
+[4mPrediction n°5[0m
+Predicted method name : yield_fields
+Exact Match: False
+F1 score: 0.5
+Precision: 0.5
+Recall: 0.5
+Perplexity: 26.253500661276835
+Semantic Distance: 0.5200722217559814
+____________________
+____________________
+[1mGlobal evaluation metrics
+____________________
+Top-5 F1 score: 1.0 achieved for prediction n° 1
+Top-5 Recall: 1.0 achieved for prediction n° 1
+Top-5 Precision: 1.0 achieved for prediction n° 1
+Top-5 Minimal Semantic Distance: 0.0 achieved for prediction n° 1
+####################

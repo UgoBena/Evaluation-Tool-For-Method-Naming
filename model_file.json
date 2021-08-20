@@ -1,0 +1,28 @@
+[
+    {
+        "label":"funtion_name",
+        "predictions":[
+            {
+                "prediction":"my_pred1",
+                "encoded_prediction":[0,8,5,2],
+                "softmax_output":"output_0_0.pt"
+            },
+            {
+                "prediction":"aSecondPredInCamelCase",
+                "encoded_prediction":[0,3,4,2],
+                "softmax_output":"output_0_1.pt"
+            }
+        ]
+    },
+
+    {
+        "label":"secondFunctionName",
+        "predictions":[
+            {
+                "prediction":"ASinglePredForAnotherLabelInPascalCase",
+                "encoded_prediction":[0,2,4,6],
+                "softmax_output":"output_1_0.pt"
+            }
+        ]
+    }
+]
