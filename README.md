@@ -3,11 +3,12 @@
 The tool can be downloaded from the GitHub page and once installed, can be run easily by following the instructions.
 
 First, the tool requires specific Python packages to be run, which can be downloaded using either pip or conda:
-\begin{itemize}
-    \item Pytorch (for computations)
-    \item NumPy (for computations)
-    \item Pandas (for csv formatting)
-    \item HuggingFace (for cosine similarity metric) 
+* Pytorch (for computations)
+* NumPy (for computations)
+* Pandas (for csv formatting)
+* HuggingFace tranformers (for cosine similarity metric) 
+* sklearn (for cosine similarity)
+* nltk and its WordNet corpus (for special Levenshtein distance computation)
 \end{itemize}
 
 To get an evaluation, the ` run_eval.py ` script must be run with the following as inputs: `-i` or `--json_file` followed by the path to the input json file (see next paragraph for additional information on the input), `-o` or `--output_csv` followed by a path to csv file that will be created and will store all the evaluation's output, and some additional options that can be checked by running `python run_eval.py -h`.
